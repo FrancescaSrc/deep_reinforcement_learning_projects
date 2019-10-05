@@ -1,29 +1,19 @@
-[//]: # (Image References)
-
-[image1]: https://user-images.githubusercontent.com/10624937/42135602-b0335606-7d12-11e8-8689-dd1cf9fa11a9.gif "Trained Agents"
-[image2]: https://user-images.githubusercontent.com/10624937/42386929-76f671f0-8106-11e8-9376-f17da2ae852e.png "Kernel"
-
 # Report for Project 1 - Deep Reinforcement Learning Nanodegree
 
 ![Trained Agents][image1]
 
-This report contains the details of the code useded to solve the first project in Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program.  
+This report contains the details of the code used to solve the first project in Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program.  
 
 ## Table of Contents
 
-
-3. [//]: # (Image References)
-
-[image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
-
-# Project 1: Navigation
+[image1]: TrainedAgent.gif
 
 
-### The algorithm
+## The algorithm
 
  The agent uses a policy to move in the environment and find the optimal policy to maximize its reward. The optimal policy is the result of a trial and error effort through which the agent leans by iteration. This kind of algorithm is called Q-Learning and the optimal policy is found by running the Q-function which calculates the expected reward for all possible actions and all possible states.
 
- The agent uses a deep neural network to approximate the Q-function. The Deep Q-Network contains three fully connected layers of 64, 64, 4 nodes. The learning rate is set to: 
+ The agent uses a deep neural network to approximate the Q-function. The Deep Q-Network contains three fully connected layers of 64, 64, 4 nodes. The learning rate is set to: 0.0006
  Decreasing the learning rate has given better results during training.
 
  The agent uses also an Experience Replay, the experience is stored in a buffer and the agent samples randomly form this buffer during the learning steps.
@@ -56,8 +46,6 @@ Q-learning is prone to overestimation of the action values because is based on t
 ### Dueling DQN
 
 The dueling DQN uses two streams, one estimates the state value function, the other the advantage for each action. The two branches are in the fully-connected layers. The Q-vakye is a combination of the two values.
-
-
 
 
 ### General information on Reinforcement learning
