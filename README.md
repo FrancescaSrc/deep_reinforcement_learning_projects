@@ -81,6 +81,6 @@ Now open the `Navigation.ipynb` to get started with training your own agent!
 
 Reinforcement Learning is a branch of Machine Learning where an agent outpust an action and the enviroment returns an observation or the state of a system and a reward. The goal of an agent is to determine the best action to take to maximaze its total reward. The environment is unknown to the agent. Deep RL uses non linear function approximimators to calculate the value actions on the base of the observations from the environment.
 Deep learning is used to find the optimal parameters for this function approximators. Since the agent is handling raw data and the entire end-to-end pipeline, this is called pixels-to-action, the agent starts from raw data and chooses the action which maximizes its reward.
-The RL agents can learn intuitive human behaviours, such as walking or knowledge gathering.
+The RL agents can be trained to learn intuitive human behaviours, such as walking or knowledge gathering just by feeding them with images on the actions to take.
 
 
