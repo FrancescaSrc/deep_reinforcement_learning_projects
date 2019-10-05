@@ -36,7 +36,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Instructions to run the project
 
-To set up this project and open the ipynb file, you will need Anaconda and an environment with all the dependencies. To install it, follow the instructions below. You can install a python environment using the requirement.txt providede in this repository, follow the instructions below.
+To set up this project and open the ipynb file, you will need Anaconda and an environment with all the dependencies. To install it, follow the instructions below. If are using Windows, you can install the python environment using the requirement.txt provided in this repository, please follow the instructions below.
 
 Once installed all the dependencies, start the `Navigation.ipynb` to start the agent, eventually you can load the trained agent I have provided in this repo. Try it and then train your own agent!
 
@@ -71,6 +71,8 @@ Once installed all the dependencies, start the `Navigation.ipynb` to start the a
 	- git clone https://github.com/Unity-Technologies/ml-agents
 	- cd ml-agents
 	- pip install mlagents
+
+In some cases, you might also need to download and install swig for Windows. Swig is the abbreviation of Simplified Wrapper and Interface Generator, it can give script language such as python the ability to invoke C and C++ libraries interface method indirectly. Just follow the [instructions on swig installation on this site](https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/)
 
 Now open the `Navigation.ipynb` to get started with training your own agent!  
 
