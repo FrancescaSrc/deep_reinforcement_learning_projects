@@ -27,6 +27,20 @@ This report contains the details of the code used to solve the first project in 
 
 The algorithm uses the prioritized an replay, it stores a set of tuples of experiences in a replay buffer which the agent can sample and lean by reusing experiences from the past.
 
+## Video of the agent: watch the results
+I recorded two videos of my agent, the untrained and trained agent.
+
+Video of the untrained agent
+
+[![Untrained agent](http://i3.ytimg.com/vi/rup91bcHyXY/hqdefault.jpg)](https://youtu.be/rup91bcHyXY)
+
+
+Video of the trained agent
+
+[![Trained agent](http://i3.ytimg.com/vi/UVtsaJRsFxc/hqdefault.jpg)](https://youtu.be/UVtsaJRsFxc)
+
+
+
 ### Algorithm improvements
 
 The algorithm solves a simple game but if it were used for a more difficult task several improvements could be added:
@@ -47,10 +61,7 @@ Q-learning is prone to overestimation of the action values because is based on t
 The dueling DQN uses two streams, one estimates the state value function, the other the advantage for each action. The two branches are in the fully-connected layers. The Q-value is a combination of the two values.
 
 
-### General information on Reinforcement learning
-
-Reinforcement Learning is a branch of Machine Learning where an agent outputs an action and the environment returns an observation or the state of a system and a reward. The goal of an agent is to determine the best action to take to maximize its total reward. The environment is unknown to the agent. Deep RL uses non linear function approximators to calculate the value actions on the base of the observations from the environment.
-Deep learning is used to find the optimal parameters for this function approximators. Since the agent is handling raw data and the entire end-to-end pipeline, this is called pixels-to-action, the agent starts from raw data and chooses the action which maximizes its reward.
-The RL agents can learn intuitive human behaviours, such as walking or knowledge gathering.
+# Project Starter Code
+The project starter code of the original Udacity repo for this project can be found [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation).
 
 
