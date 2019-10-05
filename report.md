@@ -20,12 +20,12 @@ This report contains the details of the code used to solve the first project in 
 ### The experiments and hyperparameters
 
  I have tried different learning rates and found out an interesting thing:
- the agent learns from previous trainings as well! Bij starting the agent with the trained weights and decreasing the decay, the training results even more effective and the training speeds up, resolving the enviornment in 38 episodes!
+ the agent learns from previous trainings as well! By starting the agent with the trained weights and decreasing the decay, the training results even more effective and the training speeds up, resolving the environment in very few episodes!
 
  The trained agent achieves a high score also in the testing part as shown in the tested code and in the video.
 
 
-The algorithm uses the prioritized an replay, it stores a set of tupels of experiences in a replay buffer which the agent can sample and lean by reusing experiences from the past.
+The algorithm uses the prioritized an replay, it stores a set of tuples of experiences in a replay buffer which the agent can sample and lean by reusing experiences from the past.
 
 ### Algorithm improvements
 
@@ -44,12 +44,12 @@ Q-learning is prone to overestimation of the action values because is based on t
 
 ### Dueling DQN
 
-The dueling DQN uses two streams, one estimates the state value function, the other the advantage for each action. The two branches are in the fully-connected layers. The Q-vakye is a combination of the two values.
+The dueling DQN uses two streams, one estimates the state value function, the other the advantage for each action. The two branches are in the fully-connected layers. The Q-value is a combination of the two values.
 
 
 ### General information on Reinforcement learning
 
-Reinforcement Learning is a branch of Machine Learning where an agent outputs an action and the environment returns an observation or the state of a system and a reward. The goal of an agent is to determine the best action to take to maximaze its total reward. The environment is unknown to the agent. Deep RL uses non linear function approximators to calculate the value actions on the base of the observations from the environment.
+Reinforcement Learning is a branch of Machine Learning where an agent outputs an action and the environment returns an observation or the state of a system and a reward. The goal of an agent is to determine the best action to take to maximize its total reward. The environment is unknown to the agent. Deep RL uses non linear function approximators to calculate the value actions on the base of the observations from the environment.
 Deep learning is used to find the optimal parameters for this function approximators. Since the agent is handling raw data and the entire end-to-end pipeline, this is called pixels-to-action, the agent starts from raw data and chooses the action which maximizes its reward.
 The RL agents can learn intuitive human behaviours, such as walking or knowledge gathering.
 
