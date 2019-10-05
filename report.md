@@ -4,7 +4,6 @@
 
 This report contains the details of the code used to solve the first project in Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program.  
 
-## Table of Contents
 
 [image1]: TrainedAgent.gif
 
