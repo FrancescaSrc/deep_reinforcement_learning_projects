@@ -61,7 +61,7 @@ Q-learning is prone to overestimation of the action values because is based on t
 The dueling DQN uses two streams, one estimates the state value function, the other the advantage for each action. The two branches are in the fully-connected layers. The Q-value is a combination of the two values.
 
 
-# Project Starter Code
+### Project Starter Code
 The project starter code of the original Udacity repo for this project can be found [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation).
 
 
