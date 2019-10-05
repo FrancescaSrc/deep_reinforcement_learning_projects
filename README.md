@@ -67,7 +67,7 @@ Once installed all the dependencies, start the `Navigation.ipynb` to start the a
 	```bash
 	pip install -r requirements.txt```
 	
-	Manual installation of mlagenst:
+	Manual installation of mlagents:
 	- git clone https://github.com/Unity-Technologies/ml-agents
 	- cd ml-agents
 	- pip install mlagents
