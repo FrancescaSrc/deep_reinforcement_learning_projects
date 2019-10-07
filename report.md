@@ -19,6 +19,18 @@ This report contains the details of the code used to solve the first project in 
  The agent uses a deep neural network to approximate the Q-function. The Deep Q-Network contains three fully connected layers of 64, 64, 4 nodes. The learning rate is set to: 0.0005. This learning rate has given the best results during training.
 
  The agent uses also an Replay buffer, the experience is stored in a buffer and the agent samples randomly form this buffer during the learning steps.
+ 
+### Hyperparameters tuning
+
+Agent parameters:
+BUFFER_SIZE = int(1e5)  # replay buffer size
+BATCH_SIZE = 64         # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR = 5e-4               # learning rate 
+UPDATE_EVERY = 4        # how often to update the network
+
+I have tested different parameter but there were no improvements. The basic code provided in a previous lesson gave the best results. I did experiments using different values the eps_decay, eps_end during training and decreasing the eps_decay during training gave good results. The decreasing epsilon value was clearly giving the agent a way to learn more.
 
 ### The experiments and hyperparameters
 
