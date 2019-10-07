@@ -18,23 +18,23 @@ This report contains the details of the code used to solve the first project in 
 
  The agent uses a deep neural network to approximate the Q-function. The Deep Q-Network contains three fully connected layers of 64, 64, 4 nodes. The learning rate is set to: 0.0005. This learning rate has given the best results during training.
 
- The agent uses also an Experience Replay, the experience is stored in a buffer and the agent samples randomly form this buffer during the learning steps.
+ The agent uses also an Replay buffer, the experience is stored in a buffer and the agent samples randomly form this buffer during the learning steps.
 
 ### The experiments and hyperparameters
 
  I have tried different learning rates and found out an interesting thing:
- the agent learns from previous trainings as well! By starting the agent with the trained weights and decreasing the decay, the training results even more effective and the training speeds up, resolving the environment in very few episodes! Please see my training results below.
+ the agent learns from previous trainings as well! 
  
 ![First training results][image2]
+By starting the agent with the trained weights and decreasing the decay, the training results even more effective and the training speeds up, **resolving the environment in 18 episodes**! Please see my training results below.
 ![Best training][image3]
 ![Training graph][image4]
 
  The trained agent achieves a high score also in the testing part as shown in the tested code and in the video.
 ![Training test results][image5]
 
-The algorithm uses the replay buffer, it stores a set of tuples of experiences in a replay buffer which the agent can sample and lean by reusing experiences from the past.
-I did not make any additions to the algorith as it was solving the environment really easily.
-
+As I went on with my experiments I realized the agent could show sings of overfitting for this low scores. But training it more, it showed that the agent was getting better also for the longer run reaching scores of 20 and 30 with the same technieque.
+I did not need to make any additions to the algorithm as it was solving the environment really easily.
 
 ## Video of the agent: watch the results
 I recorded two videos of my agent, the untrained and trained agent.
@@ -42,7 +42,6 @@ I recorded two videos of my agent, the untrained and trained agent.
 Video of the untrained agent
 
 [![Untrained agent](http://i3.ytimg.com/vi/rup91bcHyXY/hqdefault.jpg)](https://youtu.be/rup91bcHyXY)
-
 
 Video of the trained agent
 
@@ -68,7 +67,6 @@ Q-learning is prone to overestimation of the action values because is based on t
 ### Dueling DQN
 
 The dueling DQN uses two streams, one estimates the state value function, the other the advantage for each action. The two branches are in the fully-connected layers. The Q-value is a combination of the two values.
-
 
 ### Project Starter Code
 The project starter code of the original Udacity repo for this project can be found [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation).
