@@ -33,8 +33,8 @@ By starting the agent with the trained weights and decreasing the decay, the tra
  The trained agent achieves a high score also in the testing part as shown in the tested code and in the video.
 ![Training test results][image5]
 
-As I went on with my experiments I realized the agent could show sings of overfitting for this low scores. But training it more, it showed that the agent was getting better also for the longer run reaching scores of 20 and 30 with the same technieque.
-I did not need to make any additions to the algorithm as it was solving the environment really easily.
+As I went on with my experiments I realized the agent could show signs of overfitting for this simple task and low scores. But training it more, the agent showed it was getting better also in the longer run, reaching scores of 20 and 30 using the same technique.
+Therefore I did not need to make any additions to the algorithm as it was solving the environment really easily.
 
 ## Video of the agent: watch the results
 I recorded two videos of my agent, the untrained and trained agent.
@@ -58,7 +58,7 @@ The algorithm solves a simple game but if it were used for a more difficult task
 
 ### Prioritized experience Replay
 
-The prioritized experience replay adds significance values to each stored tuples to give a priority to reuse the tubles according to a level of priority assigned on the base of previous experience.
+The prioritized experience replay adds significance values to each stored tuples to give a priority to reuse the tuples according to a level of priority assigned on the base of previous experience.
 
 ### Double DQN
 
