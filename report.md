@@ -19,12 +19,17 @@ This report contains the details of the code used to solve the first project in 
 ### The experiments and hyperparameters
 
  I have tried different learning rates and found out an interesting thing:
- the agent learns from previous trainings as well! By starting the agent with the trained weights and decreasing the decay, the training results even more effective and the training speeds up, resolving the environment in very few episodes!
+ the agent learns from previous trainings as well! By starting the agent with the trained weights and decreasing the decay, the training results even more effective and the training speeds up, resolving the environment in very few episodes! Plese see my training results below.
+ 
+ 
 
  The trained agent achieves a high score also in the testing part as shown in the tested code and in the video.
 
 
-The algorithm uses the prioritized an replay, it stores a set of tuples of experiences in a replay buffer which the agent can sample and lean by reusing experiences from the past.
+The algorithm uses the replay buffer, it stores a set of tuples of experiences in a replay buffer which the agent can sample and lean by reusing experiences from the past.
+
+
+
 
 ## Video of the agent: watch the results
 I recorded two videos of my agent, the untrained and trained agent.
@@ -49,7 +54,7 @@ The algorithm solves a simple game but if it were used for a more difficult task
 
 ### Prioritized experience Replay
 
-The prioritized experience replay assign significance values to each stored tuples to give a priority.
+The prioritized experience replay adds significance values to each stored tuples to give a priority to reuse the tubles according to a level of priority assigned on the base of previous experience.
 
 ### Double DQN
 
