@@ -22,15 +22,15 @@ This report contains the details of the code used to solve the first project in 
  
 ### Hyperparameters tuning
 
-Agent parameters:
-BUFFER_SIZE = int(1e5)  # replay buffer size
-BATCH_SIZE = 64         # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR = 5e-4               # learning rate 
-UPDATE_EVERY = 4        # how often to update the network
+Agent hyperparameters:
+- BUFFER_SIZE = int(1e5)  # replay buffer size
+- BATCH_SIZE = 64         # minibatch size
+- GAMMA = 0.99            # discount factor
+- TAU = 1e-3              # for soft update of target parameters
+- LR = 5e-4               # learning rate 
+- UPDATE_EVERY = 4        # how often to update the network
 
-I have tested different parameter but there were no improvements. The basic code provided in a previous lesson gave the best results. I did experiments using different values the eps_decay, eps_end during training and decreasing the eps_decay during training gave good results. The decreasing epsilon value was clearly giving the agent a way to learn more.
+I have tested different hyperparameters combinations but this one gave the best results, it is the basic combination provided in a previous lesson. I did many experiments changing values the eps_decay, eps_end during training and decreasing the eps_decay during training gave good results. The decreasing epsilon value was clearly giving the agent a way to learn more.
 
 ### The experiments and hyperparameters
 
