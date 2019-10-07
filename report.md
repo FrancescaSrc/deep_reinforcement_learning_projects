@@ -1,11 +1,15 @@
+[//]: # (Image References)
+[image1]: assets/TrainedAgent.gif
+[image2]: assets/scores1.jpg
+[image3]: assets/bestscores.jpg
+[image4]: assets/graph_scores.jpg
+[image5]: assets/graph_testresults.jpg
+
 # Report for Project 1 - Deep Reinforcement Learning Nanodegree
 
 ![Trained Agents][image1]
 
 This report contains the details of the code used to solve the first project in Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program.  
-
-
-[image1]: TrainedAgent.gif
 
 
 ## The algorithm
@@ -19,16 +23,17 @@ This report contains the details of the code used to solve the first project in 
 ### The experiments and hyperparameters
 
  I have tried different learning rates and found out an interesting thing:
- the agent learns from previous trainings as well! By starting the agent with the trained weights and decreasing the decay, the training results even more effective and the training speeds up, resolving the environment in very few episodes! Plese see my training results below.
+ the agent learns from previous trainings as well! By starting the agent with the trained weights and decreasing the decay, the training results even more effective and the training speeds up, resolving the environment in very few episodes! Please see my training results below.
  
- 
+![First training results][image2]
+![Best training][image3]
+![Training graph][image4]
 
  The trained agent achieves a high score also in the testing part as shown in the tested code and in the video.
-
+![Training test results][image5]
 
 The algorithm uses the replay buffer, it stores a set of tuples of experiences in a replay buffer which the agent can sample and lean by reusing experiences from the past.
-
-
+I did not make any additions to the algorith as it was solving the environment really easily.
 
 
 ## Video of the agent: watch the results
