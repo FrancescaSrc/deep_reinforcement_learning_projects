@@ -33,7 +33,7 @@ By starting the agent with the trained weights and decreasing the decay, the tra
  The trained agent achieves a high score also in the testing part as shown in the tested code and in the video.
 ![Training test results][image5]
 
-As I went on with my experiments I realized the agent could show signs of overfitting for this simple task and low scores. But training it more, the agent showed it was getting better also in the longer run, reaching scores of 20 and 30 using the same technique.
+As I went on with my experiments I realized the agent could show signs of overfitting for this simple task. But training it longer, the agent showed it was getting better also with higher scores 20 and 30, just by using the same technique.
 Therefore I did not need to make any additions to the algorithm as it was solving the environment really easily.
 
 ## Video of the agent: watch the results
