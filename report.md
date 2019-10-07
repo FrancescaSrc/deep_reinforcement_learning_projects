@@ -30,7 +30,7 @@ Agent hyperparameters:
 - LR = 5e-4               # learning rate 
 - UPDATE_EVERY = 4        # how often to update the network
 
-I have tested different hyperparameters combinations but this one gave the best results, it is the basic combination provided in a previous lesson. I did many experiments changing values the eps_decay, eps_end during training and decreasing the eps_decay during training gave good results. The decreasing epsilon value was clearly giving the agent a way to learn more.
+I have tested different hyperparameters combinations but this one gave the best results, it is the basic combination provided in a previous lesson. I did many experiments changing values the eps_decay, eps_end and decreasing the eps_decay during training gave good results. The decreasing epsilon value was clearly giving the agent a way to learn more.
 
 ### The experiments and hyperparameters
 
